@@ -2,7 +2,7 @@ const fs = require('fs')
 const readline = require('readline')
 const path = require('node:path');
 
-let newFile = fs.createWriteStream('new-text.txt');
+let newFile = fs.createWriteStream('./02-write-file/new-text.txt');
 
 process.stdout.write('Hello beautiful person, let write something..? type exit if you wanna go do other things:)\n');
 
