@@ -4,7 +4,7 @@ const path = require('node:path')
 const readline = require('readline');
 
 let myPath = path.join(__dirname, 'styles')
-let pathForBundleFIle = path.join(__dirname , 'bundle.css')
+let pathForBundleFIle = path.join(__dirname ,'project-dist', 'bundle.css')
 let newFile = fs.createWriteStream(`${pathForBundleFIle}`);
 
 
