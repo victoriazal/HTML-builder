@@ -18,7 +18,10 @@ let createNewFile = (userInput) => {
 }
 process.stdin.on('data', createNewFile)
 
-
+process.on('SIGINT', function() {
+  process.stdout.write('K,bye honey\n');
+  process.exit()
+})
 
 
 
